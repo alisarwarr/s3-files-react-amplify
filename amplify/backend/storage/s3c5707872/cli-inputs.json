@@ -1,0 +1,17 @@
+{
+  "resourceName": "s3c5707872",
+  "policyUUID": "c5707872",
+  "bucketName": "s3imagevideoaudioupl3339e56f5e0f43d8af5fec141cc",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

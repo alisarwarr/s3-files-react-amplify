@@ -1,0 +1,100 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-s3imagevideoaudioupl-dev-210206-authRole",
+      "UnauthRoleArn": "arn:aws:iam::902276074505:role/amplify-s3imagevideoaudioupl-dev-210206-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::902276074505:role/amplify-s3imagevideoaudioupl-dev-210206-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-s3imagevideoaudioupl-dev-210206-deployment",
+      "UnauthRoleName": "amplify-s3imagevideoaudioupl-dev-210206-unauthRole",
+      "StackName": "amplify-s3imagevideoaudioupl-dev-210206",
+      "StackId": "arn:aws:cloudformation:us-east-1:902276074505:stack/amplify-s3imagevideoaudioupl-dev-210206/19566800-ad1e-11ec-a0a2-0aeaaa124225",
+      "AmplifyAppId": "d21qzedbo3uepf"
+    }
+  },
+  "auth": {
+    "s3imagevideoaudiouple964b461": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-s3imagevideoaudioupl-dev-210206-deployment/amplify-cfn-templates/auth/s3imagevideoaudiouple964b461-cloudformation-template.json",
+        "logicalId": "auths3imagevideoaudiouple964b461"
+      },
+      "lastPushTimeStamp": "2022-03-26T16:08:08.254Z",
+      "output": {
+        "UserPoolId": "us-east-1_oLna4WCSs",
+        "AppClientIDWeb": "4bptlu2e0ell0a6u8jqlvf3do4",
+        "AppClientID": "6mpdgt4cm7c0t6pqeb7aj586sv",
+        "IdentityPoolId": "us-east-1:56509756-72db-4c71-b838-647fb5fbf973",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:902276074505:userpool/us-east-1_oLna4WCSs",
+        "IdentityPoolName": "s3imagevideoaudiouple964b461_identitypool_e964b461__dev",
+        "UserPoolName": "s3imagevideoaudiouple964b461_userpool_e964b461"
+      },
+      "lastPushDirHash": "gMvb5noqlAilfogkuhUM5XzL/Rc="
+    }
+  },
+  "function": {
+    "S3Triggera4ce4d43": {
+      "service": "Lambda",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastBuildTimeStamp": "2022-03-26T16:05:20.527Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-03-26T16:05:20.582Z",
+      "distZipFilename": "S3Triggera4ce4d43-69713442714d64465a4f-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-s3imagevideoaudioupl-dev-210206-deployment",
+        "s3Key": "amplify-builds/S3Triggera4ce4d43-69713442714d64465a4f-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-s3imagevideoaudioupl-dev-210206-deployment/amplify-cfn-templates/function/S3Triggera4ce4d43-cloudformation-template.json",
+        "logicalId": "functionS3Triggera4ce4d43"
+      },
+      "lastPushTimeStamp": "2022-03-26T16:08:08.254Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:902276074505:function:S3Triggera4ce4d43-dev",
+        "Name": "S3Triggera4ce4d43-dev",
+        "LambdaExecutionRole": "S3Triggera4ce4d43LambdaRolea4ce4d43-dev"
+      },
+      "lastPushDirHash": "Is/HY4nDeaiww7O+7HaBY0rs0jU="
+    }
+  },
+  "storage": {
+    "s3c5707872": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2022-03-26T16:08:08.254Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-s3imagevideoaudioupl-dev-210206-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3c5707872"
+      },
+      "output": {
+        "BucketName": "s3imagevideoaudioupl3339e56f5e0f43d8af5fec141cc210206-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "bQZpEgnQJIiZHGESjKA2ZkmvWvI="
+    }
+  }
+}

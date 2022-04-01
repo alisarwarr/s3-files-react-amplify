@@ -1,0 +1,7 @@
+amplify init
+
+amplify add storage
+
+amplify push
+
+https://www.youtube.com/watch?v=LWhnS5elz4o&t=203s
